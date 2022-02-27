@@ -6,13 +6,18 @@ import Model.Enumerators.RpgClass;
 import Model.Enumerators.StatType;
 import Model.Inventory.Weapon;
 
+import java.util.HashMap;
+import java.util.Vector;
+
 public class Warrior extends Character {
-    Warrior(String name){
+    public Warrior(String name, Vector<Integer> statsValue){
         this.name = name;
         level = 1;
         characterClass = RpgClass.WARRIOR;
         hpDice = DiceType.D10;
-        maxHp = stats.get(StatType.CON).getBonus() + hpDice.getMaxValue();
+        stats = new HashMap<>();
+        setStats(statsValue);
+        calculateHealth();
         hp = maxHp;
         weapon = new Weapon("Longsword", DiceType.D8);
     }

@@ -1,6 +1,7 @@
 package Model.Inventory;
 
 import Model.Enumerators.DiceType;
+import Model.Enumerators.StatusType;
 
 //represents a weapon
 public class Weapon extends Item {
@@ -18,4 +19,5 @@ public class Weapon extends Item {
     private DiceType diceDamage; //specifies which type of damage die the weapon has
     int diceN; //number of dice rolled
     private int mgBonus; //
+    private StatusEffect appliesStatus;
 }

@@ -9,7 +9,7 @@ import Controller.DiceRoller;
 
 import Model.Enumerators.DiceType;
 
-public class controllerTester {
+public class ControllerTester {
     
     
     

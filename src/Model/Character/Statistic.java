@@ -12,6 +12,10 @@ public class Statistic {
         return (value - 10)/2;
     }
 
+    public int getValue() {
+        return value;
+    }
+
     private StatType type;
     private int value;
 }
