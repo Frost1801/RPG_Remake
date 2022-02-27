@@ -8,7 +8,7 @@ public class Statistic {
         this.type = type;
     }
 
-    int getBonus (){ //returns the bonus associated to the stat
+    public int getBonus(){ //returns the bonus associated to the stat
         return (value - 10)/2;
     }
 

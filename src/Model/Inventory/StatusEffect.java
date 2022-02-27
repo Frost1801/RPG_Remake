@@ -6,5 +6,5 @@ import Model.Enumerators.StatusType;
 
 public class StatusEffect {
     private StatusType type;
-    int remaining;
+    private int remaining;
 }
